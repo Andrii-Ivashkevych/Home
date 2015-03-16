@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "font";
+    src: url("../fonts/font.eot");
+    src: url("../fonts/font.eot#iefix") format("embedded-opentype"),
+         url("../fonts/font.ttf") format("truetype"),
+         url("../fonts/font.svg#font") format("svg"),
+         url("../fonts/font.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: rgb(255,255,255);
+}
+
+header {
+    width: 2000px;
+    height: 110px;
+}
+
+.logotype i {
+    display: block;
+    width: 52px;
+    height: 36px;
+    background: url("../img/logotype.png");
+}
+
+.logotype__text {
+    text-transform: uppercase;
+}
+
 .logotype p {
     font-family: 'Ubuntu Light';
     font-size: 12pt;
