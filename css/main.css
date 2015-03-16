@@ -10,11 +10,15 @@
 }
 
 body {
+    width:90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     background: rgb(255,255,255);
 }
 
 header {
-    width: 2000px;
+    max-width: 1920px;
     height: 110px;
 }
 
@@ -27,18 +31,26 @@ header {
 
 .logotype__text {
     text-transform: uppercase;
+    float: left;
 }
 
 .logotype p {
     font-family: 'Ubuntu Light';
-    font-size: 12pt;
+    font-size: 16px;
     color: rgb(51,51,51);
 }
 
 .logotype h1 {
     font-family: 'Ubuntu Medium';
-    font-size: 30pt;
+    font-size: 40px;
     color: rgb(67,67,67);
+}
+
+.social_links {
+    float: right;
+}
+.social_links ul li {
+display: inline;
 }
 
 /*
