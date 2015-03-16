@@ -1,0 +1,54 @@
+.logotype p {
+    font-family: 'Ubuntu Light';
+    font-size: 12pt;
+    color: rgb(51,51,51);
+}
+
+.logotype h1 {
+    font-family: 'Ubuntu Medium';
+    font-size: 30pt;
+    color: rgb(67,67,67);
+}
+
+/*
+.shedule_services.png {
+    background-image: url("img/shedule_services.png");
+    position: absolute;
+    left: 381px;
+    top: 1136px;
+    width: 260px;
+    height: 260px;
+    z-index: 77;
+}
+
+.preventive_maintence.png {
+  background-image: url("img/preventive_maintence.png");
+  position: absolute;
+  left: 681px;
+  top: 1136px;
+  width: 260px;
+  height: 260px;
+  z-index: 79;
+}
+
+.wheel_services.png {
+  background-image: url("img/wheel_services.png");
+  position: absolute;
+  left: 980px;
+  top: 1136px;
+  width: 260px;
+  height: 260px;
+  z-index: 83;
+}
+
+.repair_services.png {
+  background-image: url("img/repair_services.png");
+  position: absolute;
+  left: 1281px;
+  top: 1136px;
+  width: 260px;
+  height: 260px;
+  z-index: 81;
+}
+
+*/
