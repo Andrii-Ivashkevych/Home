@@ -86,6 +86,7 @@ header {
     text-decoration: none;
 }
 
+/*begin top_menu*/
 .top_menu {
     clear: both;
     background: rgb(42,45,50);
@@ -127,8 +128,9 @@ header {
     background: rgb(53,56,60);
     margin-top: -95px;
 }
+/*end top_menu*/
 
-/*carousel*/
+/*begin carousel*/
 #owl-demo .owl-item div{
     padding:5px;
 }
@@ -136,50 +138,34 @@ header {
     display: block;
     width: 100%;
     height: auto;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
 }
 
-/*
-.shedule_services.png {
-    background-image: url("img/shedule_services.png");
-    position: absolute;
-    left: 381px;
-    top: 1136px;
-    width: 260px;
-    height: 260px;
-    z-index: 77;
+.owl-buttons {
+    display: none;
 }
 
-.preventive_maintence.png {
-  background-image: url("img/preventive_maintence.png");
-  position: absolute;
-  left: 681px;
-  top: 1136px;
-  width: 260px;
-  height: 260px;
-  z-index: 79;
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    border-radius: 0;
+    background: rgb(255,255,255);
 }
 
-.wheel_services.png {
-  background-image: url("img/wheel_services.png");
-  position: absolute;
-  left: 980px;
-  top: 1136px;
-  width: 260px;
-  height: 260px;
-  z-index: 83;
+.owl-theme .owl-controls .owl-page.active span {
+    border: 3px solid rgb(255,255,255);
+    background: rgb(0, 0, 0);
+    border-radius: 0;
 }
 
-.repair_services.png {
-  background-image: url("img/repair_services.png");
-  position: absolute;
-  left: 1281px;
-  top: 1136px;
-  width: 260px;
-  height: 260px;
-  z-index: 81;
+.owl-theme .owl-controls {
+    left: 45%;
 }
 
-*/
+.owl-pagination {
+    margin-top: -50px;
+}
+/*end carousel*/

@@ -50,13 +50,15 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #869791;
+	/*background: #869791;*/
+    background: white;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
+	/*filter: Alpha(Opacity=100);*//*IE7 fix*/
+	/*opacity: 1;*/
+    background: #000000;
 }
 
 /* If PaginationNumbers is true */
