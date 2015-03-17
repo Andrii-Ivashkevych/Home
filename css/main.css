@@ -191,3 +191,7 @@ header {
     margin: 20px 0 -40px 0;
     color: rgb(255,255,255);
 }
+
+.news {
+    background: rgb(247,247,247);
+}

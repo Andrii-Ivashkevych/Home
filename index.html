@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="css/owl.theme.css"/>
     <link rel="stylesheet" href="css/owl.transitions.css"/>
 
+    <!--Accordion panel-->
+
+
     <!--Main.css-->
     <link rel="stylesheet" href="css/main.css"/>
 
@@ -207,7 +210,7 @@
         </div>
     </div>
     <!--begin news-->
-    <div class="container">
+    <div class="container news">
         <div class="row">
             <div class="col-md-6">
                 <h2>latest news</h2>
@@ -246,7 +249,68 @@
                 </div>
                 <!--end second news-->
             </div>
-            <div class="col-md-6"><h2>banners place</h2></div>
+            <div class="col-md-6">
+                <h2>banners place</h2>
+                    <div id="accordion">
+                        <h3>accordion panel 1</h3>
+                        <div>
+                            <p>
+                                Cum sociis natoque penatibus et magnis
+                                dis parturient mus. Pro vel nibh et elit
+                                mollis commodo et nec augueique Nemo enim
+                                ipsam voluptatem quia ptas sit aspernatur
+                                momo. Cum sociis natoque penatibus et magnis
+                                dis parturient ontesmus. Nemo enim ipsam
+                                voluptatem quia ptas sit aspernatur samomoPro
+                                vel nibh et elit mollis commodo et nec augueique
+                                Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                            </p>
+                        </div>
+                        <h3>accordion panel 2</h3>
+                        <div>
+                            <p>
+                                Cum sociis natoque penatibus et magnis
+                                dis parturient mus. Pro vel nibh et elit
+                                mollis commodo et nec augueique Nemo enim
+                                ipsam voluptatem quia ptas sit aspernatur
+                                momo. Cum sociis natoque penatibus et magnis
+                                dis parturient ontesmus. Nemo enim ipsam
+                                voluptatem quia ptas sit aspernatur samomoPro
+                                vel nibh et elit mollis commodo et nec augueique
+                                Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                            </p>
+                        </div>
+                        <h3>accordion panel 3</h3>
+                        <div>
+                            <p>
+                                Cum sociis natoque penatibus et magnis
+                                dis parturient mus. Pro vel nibh et elit
+                                mollis commodo et nec augueique Nemo enim
+                                ipsam voluptatem quia ptas sit aspernatur
+                                momo. Cum sociis natoque penatibus et magnis
+                                dis parturient ontesmus. Nemo enim ipsam
+                                voluptatem quia ptas sit aspernatur samomoPro
+                                vel nibh et elit mollis commodo et nec augueique
+                                Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                            </p>
+                        </div>
+                        <h3>accordion panel 4</h3>
+                        <div>
+                            <p>
+                                Cum sociis natoque penatibus et magnis
+                                dis parturient mus. Pro vel nibh et elit
+                                mollis commodo et nec augueique Nemo enim
+                                ipsam voluptatem quia ptas sit aspernatur
+                                momo. Cum sociis natoque penatibus et magnis
+                                dis parturient ontesmus. Nemo enim ipsam
+                                voluptatem quia ptas sit aspernatur samomoPro
+                                vel nibh et elit mollis commodo et nec augueique
+                                Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            </div>
         </div>
     </div>
     <!--end news-->
@@ -260,9 +324,16 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/moving.js"></script>
+<script>
+    $(function() {
+        $( "#accordion" ).accordion();
+    });
+</script>
 </body>
 </html>
