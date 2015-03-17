@@ -9,27 +9,18 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "glyphicons-halflings-regular";
-    src: url("../fonts/glyphicons-halflings-regular.eot");
-    src: url("../fonts/glyphicons-halflings-regular.eot#iefix"),
-         url("../fonts/glyphicons-halflings-regular.ttf"),
-         url("../fonts/glyphicons-halflings-regular.svg#font"),
-         url("../fonts/glyphicons-halflings-regular.woff");
-         font-weight: normal;
-         font-style: normal;
-}
-
 body {
-    width:90%;
+    width:100%;
     height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 auto;
     background: rgb(255,255,255);
 }
 
 header {
-    max-width: 1920px;
+    /*max-width: 1920px;*/
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 110px;
 }
 
@@ -168,4 +159,35 @@ header {
 .owl-pagination {
     margin-top: -50px;
 }
+
+.owl-carousel {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 /*end carousel*/
+
+/*begin services*/
+.row {
+    margin-top: 72px;
+}
+
+.container .services {
+    background: rgb(42,45,50);
+    width: 100%;
+    height: auto;
+}
+
+.services a {
+    color: rgb(255,255,255);
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 22px;
+}
+
+.services h2 {
+    font-family: "Ubuntu Medium";
+    font-size: 32px;
+    margin: 20px 0 -40px 0;
+    color: rgb(255,255,255);
+}
