@@ -9,6 +9,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "glyphicons-halflings-regular";
+    src: url("../fonts/glyphicons-halflings-regular.eot");
+    src: url("../fonts/glyphicons-halflings-regular.eot#iefix"),
+         url("../fonts/glyphicons-halflings-regular.ttf"),
+         url("../fonts/glyphicons-halflings-regular.svg#font"),
+         url("../fonts/glyphicons-halflings-regular.woff");
+         font-weight: normal;
+         font-style: normal;
+}
+
 body {
     width:90%;
     height: auto;
@@ -74,6 +85,62 @@ header {
     color: rgb(36,140,236);
     text-decoration: none;
 }
+
+.top_menu {
+    clear: both;
+    background: rgb(42,45,50);
+    height: 56px;
+}
+
+.nav .nav-pills {
+    float: left;
+}
+
+.dropdown a {
+    font-family: "Ubuntu Condensed";
+    font-size: 19px;
+    line-height: 56px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.nav-pills>li>a {
+    border-radius: 0;
+    border-left: 1px solid rgb(24,26,29);
+}
+
+.nav-pills>li>a:hover {
+    background: rgb(36,140,236);
+}
+
+.nav>li>a {
+    padding: 0 15px;
+}
+
+
+.search {
+    float: right;
+}
+
+.form-control {
+    border: 1px solid rgb(24,26,29);
+    background: rgb(53,56,60);
+    margin-top: -95px;
+}
+
+/*carousel*/
+#owl-demo .owl-item div{
+    padding:5px;
+}
+#owl-demo .owl-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
 /*
 .shedule_services.png {
     background-image: url("img/shedule_services.png");

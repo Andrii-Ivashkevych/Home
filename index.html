@@ -12,11 +12,19 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!--Main.css-->
-    <link rel="stylesheet" href="css/main.css"/>
-
     <!--Fonts from fontastic.me-->
     <link href="https://fontastic.s3.amazonaws.com/83YgbtiyPA2jWvzoZicF4T/icons.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+
+    <!--Styles for carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/owl.theme.css"/>
+    <link rel="stylesheet" href="css/owl.transitions.css"/>
+
+    <!--Main.css-->
+    <link rel="stylesheet" href="css/main.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,6 +37,7 @@
 <div class="container">
     <!--begin header-->
     <header>
+        <!--begin logotype-->
         <div class="logotype">
             <i class="logo"></i>
             <div class="logotype__text">
@@ -36,6 +45,8 @@
                 <p>industrial theme</p>
             </div>
         </div>
+        <!--end logotype-->
+        <!--begin social_links-->
         <nav class="social_links">
             <ul class="icon">
                 <li><a href="#" data-icon="a"></a></li>
@@ -45,13 +56,94 @@
                 <li><a href="#" data-icon="e"></a></li>
             </ul>
         </nav>
+        <!--end social_links-->
+        <!--begin top_menu-->
         <div class="top_menu">
+            <!--begin Main links-->
+            <ul class="nav nav-pills">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        home
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        features
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        services
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        news
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        shop
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--end Main links-->
+            <!--begin search-->
+            <div class="search">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
 
+                </form>
+            </div>
+            <!--end search-->
         </div>
+        <!--end top_menu-->
     </header>
     <!--end header-->
 
     <!--begin slider-->
+    <div id="owl-demo" class="owl-carousel">
+        <div><img src="img/slider.png"></div>
+        <div><img src="img/slider.png"></div>
+        <div><img src="img/slider.png"></div>
+    </div>
     <!--end slider-->
 
     <!--begin our_services-->
@@ -71,5 +163,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+            autoPlay : 3000,
+            stopOnHover : true,
+            navigation:true,
+            paginationSpeed : 1000,
+            goToFirstSpeed : 2000,
+            singleItem : true,
+            autoHeight : true,
+            transitionStyle:"fade"
+        });
+
+    });
+</script>
 </body>
 </html>
