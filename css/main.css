@@ -1,197 +1,363 @@
 @font-face {
-    font-family: "font";
-    src: url("../fonts/font.eot");
-    src: url("../fonts/font.eot#iefix") format("embedded-opentype"),
-         url("../fonts/font.ttf") format("truetype"),
-         url("../fonts/font.svg#font") format("svg"),
-         url("../fonts/font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+    font-family : '"font"';
+    src : url("../fonts/font.eot");
+    src : url("../fonts/font.eot#iefix") format("embedded-opentype"), url("../fonts/font.ttf") format("truetype"), url("../fonts/font.svg#font") format("svg"), url("../fonts/font.woff") format("woff");
+    font-weight : normal;
+    font-style : normal;
+}
+body {
+    width : 100%;
+    max-width: 1920px;
+    height : auto;
+    margin : 0 auto;
+    background : rgb(255, 255, 255);
 }
 
-body {
-    width:100%;
-    height: auto;
-    margin: 0 auto;
-    background: rgb(255,255,255);
+.container {
+    width: 100%;
+    height: 100%;
+}
+header, .slider, .owl-carousel, .partners {
+    width : 90%;
+    margin-left : 5%;
+    margin-right : 5%;
 }
 
 header {
-    /*max-width: 1920px;*/
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 110px;
+    height : 110px;
 }
 
 .logotype i {
-    display: block;
-    width: 52px;
-    height: 36px;
-    background: url("../img/logotype.png");
+    display : block;
+    width : 52px;
+    height : 36px;
+    background : url("../img/logotype.png");
 }
-
 .logotype__text {
-    text-transform: uppercase;
-    float: left;
+    text-transform : uppercase;
+    float : left;
 }
-
 .logotype p {
-    font-family: 'Ubuntu Light';
-    font-size: 12px;
-    color: rgb(51,51,51);
-    margin-left: 63px;
-    margin-top: -5px;
+    font-family : 'Ubuntu Light';
+    font-size : 12px;
+    color : rgb(51, 51, 51);
+    margin-left : 63px;
+    margin-top : -5px;
 }
-
 .logotype h1 {
-    font-family: 'Ubuntu Medium';
-    font-size: 30px;
-    color: rgb(67,67,67);
-    margin: 32px 0 0 63px;
+    font-family : 'Ubuntu Medium';
+    font-size : 30px;
+    color : rgb(67, 67, 67);
+    margin : 32px 0 0 63px;
 }
-
-
 .logo {
-    position: absolute;
-    top: 37px;
+    position : absolute;
+    top : 37px;
 }
 .social_links {
-    float: right;
+    float : right;
 }
 .social_links ul li {
-    display: inline;
+    display : inline;
 }
-
 .social_links {
-    margin-top: 48px;
-    padding: 0 9px 0 9px;
+    margin-top : 48px;
+    padding : 0 9px 0 9px;
 }
-
 .social_links a {
-    color: rgb(204,204,204);
+    color : rgb(204, 204, 204);
 }
-
 .social_links a:hover {
-    color: rgb(36,140,236);
-    text-decoration: none;
+    color : rgb(36, 140, 236);
+    text-decoration : none;
 }
-
-/*begin top_menu*/
 .top_menu {
-    clear: both;
-    background: rgb(42,45,50);
-    height: 56px;
+    clear : both;
+    background : rgb(42, 45, 50);
+    height : 56px;
 }
-
 .nav .nav-pills {
-    float: left;
+    float : left;
 }
-
 .dropdown a {
-    font-family: "Ubuntu Condensed";
-    font-size: 19px;
-    line-height: 56px;
-    text-align: left;
-    text-transform: uppercase;
+    font-family : "Ubuntu Condensed";
+    font-size : 19px;
+    line-height : 56px;
+    text-align : left;
+    text-transform : uppercase;
 }
-
-.nav-pills>li>a {
-    border-radius: 0;
-    border-left: 1px solid rgb(24,26,29);
+.nav-pills > li > a {
+    border-radius : 0;
+    border-left : 1px solid rgb(24, 26, 29);
 }
-
-.nav-pills>li>a:hover {
-    background: rgb(36,140,236);
+.nav-pills > li > a:hover {
+    background : rgb(36, 140, 236);
 }
-
-.nav>li>a {
-    padding: 0 15px;
+.nav > li > a {
+    padding : 0 15px;
 }
-
-
 .search {
-    float: right;
+    float : right;
 }
-
 .form-control {
-    border: 1px solid rgb(24,26,29);
-    background: rgb(53,56,60);
-    margin-top: -95px;
+    border : rgb(24, 26, 29) solid 1px;
+    background : rgb(53, 56, 60);
+    margin-top : -95px;
 }
-/*end top_menu*/
-
-/*begin carousel*/
-#owl-demo .owl-item div{
-    padding:5px;
+#owl-demo .owl-item div {
+    padding : 5px;
 }
-#owl-demo .owl-item img{
-    display: block;
-    width: 100%;
-    height: auto;
+#owl-demo .owl-item img {
+    display : block;
+    width : 100%;
+    height : auto;
 }
-
 .owl-buttons {
-    display: none;
+    display : none;
 }
-
 .owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin: 5px 7px;
-    filter: Alpha(Opacity=50);
-    opacity: 0.5;
-    border-radius: 0;
-    background: rgb(255,255,255);
+    display : block;
+    width : 16px;
+    height : 16px;
+    margin : 5px 7px;
+    opacity : 0.5;
+    border-radius : 0;
+    background : rgb(255, 255, 255);
 }
-
 .owl-theme .owl-controls .owl-page.active span {
-    border: 3px solid rgb(255,255,255);
-    background: rgb(0, 0, 0);
-    border-radius: 0;
+    border : rgb(255, 255, 255) solid 3px;
+    background : rgb(0, 0, 0);
+    border-radius : 0;
 }
-
 .owl-theme .owl-controls {
-    left: 45%;
+    left : 45%;
 }
-
 .owl-pagination {
-    margin-top: -50px;
+    margin-top : -50px;
+}
+.owl-carousel {
+    width : 90%;
+    margin-left : 5%;
+    margin-right : 5%;
+}
+.col-md-4 h2 {
+    font-family : 'Ubuntu Medium';
+    font-size : 90px;
+    text-align : center;
+    color : rgb(239, 239, 240);
+}
+.row {
+    margin-top : 72px;
+    margin-bottom : 88px;
 }
 
-.owl-carousel {
+.services {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 }
-/*end carousel*/
 
-/*begin services*/
-.row {
-    margin-top: 72px;
+.services i {
+    color: rgb(36,140,236);
+    font-size: 14px;
+    padding: 5px;
+    vertical-align: middle;
 }
 
-.container .services {
-    background: rgb(42,45,50);
-    width: 100%;
-    height: auto;
+.services i:hover {
+    color: rgb(152,159,179);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .services a {
-    color: rgb(255,255,255);
+    font-family: 'Ubuntu Medium';
+    font-size: 17px;
     text-align: center;
-    font-family: "Ubuntu";
-    font-size: 22px;
+    color: rgb(42,43,46);
+    text-decoration: none;
 }
 
-.services h2 {
-    font-family: "Ubuntu Medium";
+.services a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(36,140,236);
+}
+
+/*div.our_services {*/
+    /*height: 500px;*/
+/*}*/
+div.our_services {
+    background : rgb(42, 45, 50);
+    width : 100%;
+    height: 500px;
+}
+
+.our_services .row {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.our_services>img {
+    width: 90%;
+    height: auto;
+}
+
+.our_services p {
+    text-align : center;
+}
+
+#our_services {
+    line-height: 80px;
+    margin-left: 85px;
+}
+
+h2.our_services {
+    margin-left: 85px;
+}
+
+.our_services a {
+    color : rgb(255, 255, 255);
+    text-align : center;
+    font-family : "Ubuntu";
+    font-size : 22px;
+}
+.our_services h2 {
+    font-family : "Ubuntu Medium";
+    font-size : 32px;
+    margin : 20px 0 -40px 0;
+    color : rgb(255, 255, 255);
+}
+.news {
+    width: 100%;
+    background : rgb(247, 247, 247);
+    margin-top: -100px;
+}
+
+.news .row {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+}
+
+.news h2 {
+    font-family: 'Ubuntu Medium';
     font-size: 32px;
-    margin: 20px 0 -40px 0;
+    text-align: left;
+    padding: 65px 0 49px 3px;
+    color: rgb(42,45,50);
+    text-transform: uppercase;
+}
+
+#latest_news {
+    margin-left: 50px;
+}
+
+/*begin date*/
+.date {
+    position: relative;
+    top: -135px;
+    left: -20px;
+}
+
+.month {
+    width: 40px;
+    height: 40px;
+    background: rgb(36,140,236);
+    font-family: 'Ubuntu Medium';
+    font-size: 21px;
+    text-align: center;
     color: rgb(255,255,255);
 }
 
-.news {
-    background: rgb(247,247,247);
+.number {
+    width: 40px;
+    height: 40px;
+    background: rgb(244,182,13);
+    font-family: 'Ubuntu Medium';
+    font-size: 21px;
+    text-align: center;
+    color: rgb(42,43,46);
 }
+/*end date*/
+/*end carousel*/
+.bottom_menu {
+    background : rgb(42, 45, 50);
+}
+.bottom_menu h4 {
+    font-family : "Ubuntu Medium";
+    font-size : 22px;
+    margin-top : 63px;
+    margin-bottom : 40px;
+    color : rgb(255, 255, 255);
+    text-align : left;
+    text-transform : uppercase;
+}
+.bottom_menu a {
+    font-family : 'Arial Regular';
+    font-size : 17px;
+    text-align : left;
+    color : rgb(110, 111, 114);
+    line-height : 35px;
+    text-decoration : none;
+}
+.bottom_menu a:hover {
+    color : rgb(36, 140, 236);
+    text-decoration : none;
+}
+.bottom_menu hr {
+    margin-top : 0;
+    margin-bottom : 0;
+    border-top : 1px solid rgb(57, 60, 64);
+}
+.bottom_menu {
+    width : 100%;
+    height : 325px;
+}
+
+.bottom_menu .col-md-3 {
+    width: 25%;
+}
+.bottom_menu .wrapper {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*begin footer*/
+footer {
+    width : 100%;
+    background : rgb(53, 56, 60);
+}
+
+footer .row {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    /*height: 60px;*/
+}
+
+footer ul li {
+    display : inline;
+}
+footer img {
+    padding-right : 12px;
+}
+
+footer p {
+    text-align : right;
+    color : rgb(111, 112, 115);
+    font-family: 'Arial';
+    font-size: 16px;
+    line-height: 60px;
+}
+
+footer a {
+    color: rgb(134,135,137);
+    text-align : right;
+    font-family: 'Arial';
+    font-size: 16px;
+    line-height: 60px;
+}
+/*end footer*/
